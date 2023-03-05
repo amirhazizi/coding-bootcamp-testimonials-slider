@@ -5,10 +5,34 @@
 /* global css */
 html {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 16px;
+}
+
+
+/* actual css */
+body {
+    background: url('../images/pattern-curve.svg') bottom left/contain no-repeat;
+}
+
+main {
+    width: min(90vw, 1240px);
+    /* max-width: 1240px; */
+}
+
+.user-avatar {
+    background: url('../images/pattern-bg.svg') center/contain no-repeat;
+}
+
+.user-text {
+    background: url('../images/pattern-quotes.svg') center top/20% no-repeat;
+}
+
+.user-text p {
+    font-size: 1.05rem;
 }
 
 /* footer */
 footer {
-    font-size: .45rem;
+    width: min(80vw, 27.5rem);
+    /* max-width: 32rem; */
 }
