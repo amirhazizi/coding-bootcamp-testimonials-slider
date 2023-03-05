@@ -15,12 +15,19 @@ body {
 }
 
 main {
-    width: min(90vw, 1240px);
-    /* max-width: 1240px; */
+    width: min(90vw, 1300px);
+
 }
 
 .user-avatar {
     background: url('../images/pattern-bg.svg') center/contain no-repeat;
+
+}
+
+.btn-container {
+    width: 6.5rem;
+    height: 3.3rem;
+    box-shadow: 0 1rem 1rem rgba(57, 73, 104, 0.083);
 }
 
 .user-text {
@@ -31,8 +38,57 @@ main {
     font-size: 1.05rem;
 }
 
+@media (min-width:768px) {
+    body {
+        background-size: 50%;
+    }
+
+    .user-text {
+        margin-right: -10rem;
+        background-position: left 28% top;
+        background-size: 12%;
+    }
+
+    .user-text p {
+        font-size: 1.2rem;
+    }
+
+    .user-avatar {
+        width: 40rem;
+        background-position: center right 25%;
+
+    }
+}
+
+@media (min-width:1024px) {
+    .user-text {
+        margin-right: -12rem;
+    }
+
+    .user-text p {
+        font-size: 1.55rem;
+    }
+
+    .user-avatar {
+        width: 45rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .user-text {
+        margin-right: -17rem;
+    }
+
+    .user-text p {
+        font-size: 1.9rem;
+    }
+
+    .user-avatar {
+        width: 65rem;
+    }
+}
+
 /* footer */
 footer {
     width: min(80vw, 27.5rem);
-    /* max-width: 32rem; */
 }
