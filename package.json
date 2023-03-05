@@ -1,0 +1,24 @@
+{
+  "name": "coding-bootcamp-testimonials-slider-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhazizi/coding-bootcamp-testimonials-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhazizi/coding-bootcamp-testimonials-slider/issues"
+  },
+  "homepage": "https://github.com/amirhazizi/coding-bootcamp-testimonials-slider#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

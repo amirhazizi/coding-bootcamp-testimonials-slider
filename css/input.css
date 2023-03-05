@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+/* footer */
+footer {
+    font-size: .45rem;
+}
