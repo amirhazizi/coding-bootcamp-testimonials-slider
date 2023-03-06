@@ -1,6 +1,6 @@
-export default persons = [
+const persons = [
   {
-    image: "../images/image-tanya.jpg",
+    image: "./images/image-tanya.jpg",
     name: "Tanya Sinclair",
     professional: "UX Engineer",
     text: `“ I’ve been interested in coding for a while but never taken the jump,
@@ -8,7 +8,7 @@ export default persons = [
           of my dreams and so excited about the future. ”`,
   },
   {
-    image: "../images/image-john.jpg",
+    image: "./images/image-john.jpg",
     name: "John Tarkpor",
     professional: " Junior Front-end Developer",
     text: `“ If you want to lay the best foundation possible I’d recommend taking this
@@ -16,3 +16,4 @@ export default persons = [
     confident about starting up as a professional developer. ”`,
   },
 ]
+export default persons
