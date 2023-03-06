@@ -27,28 +27,26 @@
       class="space-y-6 my-8 mb-20 md:flex md:flex-row-reverse md:items-center md:space-y-0 md:justify-between md:m-0"
     >
       <!-- user avatar -->
-      <div class="user-avatar p-10 md:p-20 md:py-12">
+      <div class="user-avatar relative p-10 md:p-20 md:py-12">
         <!-- avatar container -->
-        <div class="relative">
-          <!-- avatar.img -->
+        <div class="avatar-container relative">
           <img
-            class="avatar rounded-md mx-auto drop-shadow-2xl"
+            class="rounded-md mx-auto drop-shadow-2xl opacity-0"
             src="./images/image-tanya.jpg"
-            alt=""
           />
-          <!-- button container -->
-          <div
-            class="btn-container absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-full flex justify-between px-3 items-center md:left-0 md:translate-x-3/4"
-          >
-            <!-- previous user -->
-            <button id="prev-btn" class="p-1">
-              <img src="./images/icon-prev.svg" alt="" />
-            </button>
-            <!-- next user -->
-            <button id="next-btn" class="p-1">
-              <img src="./images/icon-next.svg" alt="" />
-            </button>
-          </div>
+        </div>
+        <!-- button container -->
+        <div
+          class="btn-container absolute bottom-5 left-1/2 -translate-x-1/2 bg-white rounded-full flex justify-between px-3 items-center md:left-12 md:translate-x-3/4 z-10"
+        >
+          <!-- previous user -->
+          <button id="prev-btn" class="p-1">
+            <img src="./images/icon-prev.svg" alt="" />
+          </button>
+          <!-- next user -->
+          <button id="next-btn" class="p-1">
+            <img src="./images/icon-next.svg" alt="" />
+          </button>
         </div>
       </div>
       <!-- user text -->
@@ -56,21 +54,13 @@
         class="user-text text-center space-y-8 px-4 py-8 text-clDarkBlue w-5/6 mx-auto md:text-left md:py-12 md:px-10 lg:px-16 xl:px-24"
       >
         <!-- text -->
-        <p class="user-desc opacity-90 font-normal">
-          <!-- “ I’ve been interested in coding for a while but never taken the jump,
-          until now. I couldn’t recommend this course enough. I’m now in the job
-          of my dreams and so excited about the future. ” -->
-        </p>
+        <p class="user-desc opacity-90 font-normal"></p>
         <!-- user detail container -->
         <div class="md:flex md:items-center md:gap-x-3 md:text-xl">
           <!-- user name -->
-          <h1 class="user-name font-bold leading-5">
-            <!-- Tanya Sinclair -->
-          </h1>
+          <h1 class="user-name font-bold leading-5"></h1>
           <!-- user professional -->
-          <h2 class="user-profes text-clGrayishBlue">
-            <!-- UX Engineer -->
-          </h2>
+          <h2 class="user-profes text-clGrayishBlue"></h2>
         </div>
       </div>
     </main>

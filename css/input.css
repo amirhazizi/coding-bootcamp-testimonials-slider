@@ -25,9 +25,9 @@ main {
 }
 
 .btn-container {
-    width: 6.5rem;
-    height: 3.3rem;
-    box-shadow: 0 1rem 1rem rgba(57, 73, 104, 0.083);
+    width: 6rem;
+    height: 2.8rem;
+    box-shadow: 0 1rem 1.2rem rgba(39, 50, 70, 0.182);
 }
 
 .user-text {
@@ -38,9 +38,43 @@ main {
     font-size: 1.05rem;
 }
 
+/* avatars classes */
+.avatar {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 550ms;
+}
+
+.avatar.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.avatar.last {
+    transform: translateX(-100%);
+}
+
+.avatar.next {
+    transform: translateX(100%);
+}
+
+/* footer */
+footer {
+    width: min(80vw, 27.5rem);
+}
+
+/* media queris */
 @media (min-width:768px) {
+
     body {
         background-size: 50%;
+    }
+
+    .btn-container {
+        width: 6.5rem;
+        height: 3.3rem;
     }
 
     .user-text {
@@ -80,15 +114,10 @@ main {
     }
 
     .user-text p {
-        font-size: 1.9rem;
+        font-size: 1.88rem;
     }
 
     .user-avatar {
         width: 65rem;
     }
-}
-
-/* footer */
-footer {
-    width: min(80vw, 27.5rem);
 }
