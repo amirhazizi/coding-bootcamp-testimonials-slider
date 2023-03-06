@@ -11,18 +11,43 @@ const userProfes = document.querySelector(".user-profes")
 // index
 let index = 0
 
+// nextBtn event
+nextBtn.addEventListener("click", () => {
+  index++
+  indexChecker()
+  showUser(index)
+})
+
+// prevBtn event
+prevBtn.addEventListener("click", () => {
+  index--
+  indexChecker()
+  showUser(index)
+})
+
+// DOMContentLoaded event
+window.addEventListener("DOMContentLoaded", () => {
+  showUser(index)
+})
+
 // user switcher function
-function showUser(num) {
-  const personNumber = num
-  if (personNumber === persons.length) personNumber = 0
-  if (personNumber < 0) personNumber = persons.length - 1
-  const { image: imageSrc, name, prof, text } = persons[personNumber]
+function showUser(index) {
+  let personNumber = index
+  console.log("personNum", personNumber)
+  const {
+    image: imageSrc,
+    name,
+    professional: prof,
+    text,
+  } = persons[personNumber]
   userImage.setAttribute("src", imageSrc)
   userName.innerHTML = name
   userProfes.innerHTML = prof
   userText.innerHTML = text
 }
-// DOMContentLoaded event
-window.addEventListener("DOMContentLoaded", () => {
-  showUser(index)
-})
+
+// index cheacker
+function indexChecker() {
+  if (index >= persons.length) index = 0
+  if (index < 0) index = persons.length - 1
+}
