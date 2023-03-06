@@ -20,7 +20,7 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 ### Live Site
 
-[Click Here](https://boisterous-puppy-56ae87.netlify.app/)
+[Click Here](https://enchanting-dolphin-a9752d.netlify.app/)
 
 ### Built with
 
