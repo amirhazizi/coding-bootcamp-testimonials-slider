@@ -676,11 +676,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
@@ -776,7 +771,7 @@ main {
 }
 
 .user-text p {
-  font-size: 1.05rem;
+  font-size: 1.01rem;
 }
 
 /* avatars classes */
@@ -784,8 +779,8 @@ main {
 .avatar {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(100%);
-  transition: all 550ms;
+  transform: translateX(30%);
+  transition: all 550ms ease-in-out;
 }
 
 .avatar.active {
@@ -795,11 +790,11 @@ main {
 }
 
 .avatar.last {
-  transform: translateX(-100%);
+  transform: translateX(-30%);
 }
 
 .avatar.next {
-  transform: translateX(100%);
+  transform: translateX(30%);
 }
 
 /* footer */
@@ -852,15 +847,15 @@ footer {
 
 @media (min-width:1440px) {
   .user-text {
-    margin-right: -17rem;
+    margin-right: -15.5rem;
   }
 
   .user-text p {
-    font-size: 1.88rem;
+    font-size: 1.98rem;
   }
 
   .user-avatar {
-    width: 65rem;
+    width: 58rem;
   }
 }
 
